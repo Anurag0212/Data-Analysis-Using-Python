@@ -1,0 +1,3 @@
+('Lead:', 'sally.beck@enron.com')
+('Audience:', 'jeffrey.gossett@enron.com, bob.hall@enron.com, brenda.herod@enron.com, \n\tleslie.reeves@enron.com, stacey.white@enron.com, \n\tbeth.apollo@enron.com, sheri.thomas@enron.com, brent.price@enron.com')
+('Keyword', 'reward')

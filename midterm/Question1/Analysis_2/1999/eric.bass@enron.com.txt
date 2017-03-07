@@ -1,0 +1,3 @@
+('Lead:', 'eric.bass@enron.com')
+('Audience:', "phillip.love@enron.com, michael.walters@enron.com, o'neal.winfree@enron.com, \n\tbryan.hull@enron.com, david.baumbach@enron.com, \n\tbrian.hoskins@enron.com, chad.landry@enron.com, \n\ttimothy.blanchard@enron.com, matthew.lenhart@enron.com")
+('Keyword', 'gift')

@@ -1,0 +1,3 @@
+('Lead:', 'drew.fossum@enron.com')
+('Audience:', 'kevin.hyatt@enron.com, lorraine.lindberg@enron.com, rockey.storie@enron.com')
+('Keyword', 'reward')

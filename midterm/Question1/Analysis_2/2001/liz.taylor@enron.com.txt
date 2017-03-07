@@ -1,0 +1,3 @@
+('Lead:', 'liz.taylor@enron.com')
+('Audience:', 'john.lavorato@enron.com, mike.mcconnell@enron.com, greg.whalley@enron.com, \n\tbill.white@enron.com, greg.piper@enron.com, tim.battaglia@enron.com, \n\tdavid.delainey@enron.com, don.black@enron.com')
+('Keyword', 'gift')
