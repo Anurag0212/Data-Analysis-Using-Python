@@ -39,7 +39,7 @@ manhattan_data=month_year_range[month_year_range.BOROUGH=='MANHATTAN']
 manhattan_count=manhattan_data['BOROUGH'].value_counts().reset_index(drop=True)
 manhattan_df=pd.DataFrame(manhattan_data.groupby(['MONTH'],sort=False).size().reset_index())
 manhattan_df.columns=['MONTH','MANHATTAN_ACCIDENT_COUNT']
-manhattan_df
+print(manhattan_df)
 
 
 # In[162]:
@@ -47,7 +47,7 @@ manhattan_df
 count_nyc=month_year_range['BOROUGH'].value_counts().reset_index(drop=True)
 nyc_accident_count=pd.DataFrame(month_year_range.groupby(['MONTH'],sort=False).size().reset_index())
 nyc_accident_count.columns=['MONTH','NYC_ACCIDENT_COUNT']
-nyc_accident_count
+print(nyc_accident_count)
 
 
 # In[164]:
@@ -55,7 +55,7 @@ nyc_accident_count
 main_frame=pd.merge(manhattan_df,nyc_accident_count)
 #frame
 main_frame['PERCENTAGE']=(main_frame['MANHATTAN_ACCIDENT_COUNT']/main_frame['NYC_ACCIDENT_COUNT'])*100
-main_frame
+print(main_frame)
 
 
 # In[166]:

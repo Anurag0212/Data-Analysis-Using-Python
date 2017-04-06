@@ -18,7 +18,7 @@ from pandas import DataFrame as df
 # In[57]:
 
 employee_compensation=pd.read_csv(r'Assignmen_3\Data\employee_compensation.csv')  #reading csv file and storing values in a Variable
-employee_compensation.head(3)
+print(employee_compensation.head())
 
 
 # In[58]:
@@ -35,7 +35,7 @@ del sorted_compensation['Organization Group']
 
 # In[60]:
 
-sorted_compensation.head(9)
+print(sorted_compensation.head(9))
 
 
 # In[61]:

@@ -25,7 +25,7 @@ from pandas import DataFrame as df
 # In[2]:
 
 movies_awards=pd.read_csv(r'Assignmen_3\Data\movies_awards.csv')
-movies_awards.head()
+print(movies_awards.head())
 
 
 # In[3]:
@@ -37,7 +37,7 @@ new_movie_frame=movie_award.reset_index()
 
 # In[4]:
 
-new_movie_frame.head()
+print(new_movie_frame.head())
 
 
 # In[6]:
@@ -48,7 +48,7 @@ new_df = pd.DataFrame({'AWARDS':['FOO'],'AWARDS WON' : [0],'AWARDS NOMINATED' : 
                       'PRIMETIME EMMY WON' : [0],'PRIMETIME EMMY NOMINATED' : [0],
                       'BAFTA FILM WON' : [0],'BAFTA FILM NOMINATED' : [0]})
 new_df.loc[0]
-new_df
+print(new_df)
 
 
 # In[7]:
@@ -102,7 +102,7 @@ for i in new_movie_frame.index:
 
 # In[8]:
 
-new_df.head()
+print(new_df.head())
 
 
 # In[9]:

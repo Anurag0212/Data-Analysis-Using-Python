@@ -18,7 +18,7 @@ from pandas import DataFrame as df
 
 #Importing csv file and storing data into vehicle_Collision variable
 vehicle_collisions=pd.read_csv(r"Assignmen_3\Data\vehicle_collisions.csv") 
-vehicle_collisions.head(5)
+print(vehicle_collisions.head())
 
 
 # In[3]:
@@ -29,7 +29,7 @@ vehicle_collisions['BOROUGH']=pd.DataFrame(vehicle_collisions['BOROUGH'].fillna(
 # In[4]:
 
 vehicle_collisions=vehicle_collisions.fillna(value=0)   #Replacing Null by 0 in Dataframe 
-vehicle_collisions.head(5)
+print(vehicle_collisions.head())
 
 
 # In[5]:
@@ -50,7 +50,7 @@ vehicle_collisions['Total']=vehicle1+vehicle2+vehicle3+vehicle4+vehicle5  #Addin
 
 accident_count=pd.DataFrame(vehicle_collisions.groupby(['BOROUGH','Total']).size().reset_index())  #Grouping BOROUGH and Vehicle involved in accident and counting the values
 accident_count.columns=['BOROUGH','TOTAL','COUNT']     #Assigning columns names to new Dataframe
-accident_count.head()
+print(accident_count.head())
 
 
 # In[8]:
@@ -81,7 +81,7 @@ for i in accident_count.index:
 # In[9]:
 
 new_df=new_df[['BOROUGH','ONE_VEHICLE_INVOLVED','TWO_VEHICLES_INVOLVED','THREE_VEHICLES_INVOLVED','MORE_VEHICLES_INVOLVED']]
-new_df
+print(new_df)
 
 
 # In[11]:

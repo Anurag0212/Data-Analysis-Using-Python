@@ -18,20 +18,20 @@ from pandas import DataFrame as df
 # In[183]:
 
 match_data=pd.read_csv(r'Assignmen_3\Data\cricket_matches.csv')  #reading csv file and storing values in a Variable
-match_data.head(3)
+print(match_data.head(3))
 
 
 # In[184]:
 
 filtered_data=match_data[match_data.home==match_data.winner]  #Applying filter to get the team names who hosts and wins the game
-filtered_data.head(3)
+print(filtered_data.head(3))
 
 
 # In[185]:
 
 host_winning_match=pd.DataFrame(filtered_data.groupby('home').size().reset_index())  #Couting how many time a team hosts and wins the game
 host_winning_match.columns=['Home','Number']                                         #Giving column names to the new data frame
-host_winning_match.head(5)
+print(host_winning_match.head(5))
 
 
 # In[186]:
@@ -45,14 +45,14 @@ winners_second_inning=filtered_data.groupby('home').apply(lambda x: x[x['winner'
 Score=winners_first_inning+winners_second_inning
 Score=pd.DataFrame(Score.reset_index())
 Score.columns=['Home','Score']
-Score.head(5)
+print(Score.head(5))
 
 
 # In[201]:
 
 average_score=pd.merge(host_winning_match,Score)
 average_score['Average Score']=(average_score['Score']/average_score['Number'])
-average_score.head(5)
+print(average_score.head(5))
 
 
 # In[202]:
@@ -62,7 +62,7 @@ average_score=average_score.drop(average_score.columns[[1,2]],axis=1)
 
 # In[203]:
 
-average_score.head()
+print(average_score.head())
 
 
 # In[204]:
