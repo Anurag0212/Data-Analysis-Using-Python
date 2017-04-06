@@ -18,19 +18,19 @@ from pandas import DataFrame as df
 # In[145]:
 
 #Importing csv file and storing data into vehicle_Collision variable
-vehicle_collisions=pd.read_csv(r"C:\Data Scienence\Assignmen_3\Data\vehicle_collisions.csv") 
+vehicle_collisions=pd.read_csv(r"Assignmen_3\Data\vehicle_collisions.csv") 
 
 
 # In[146]:
 
 vehicle_collisions['DATE']=pd.to_datetime(vehicle_collisions['DATE'])  #Converting DATE column to Datetime datatype
-month_year_range=vehicle_collisions[vehicle_collisions['DATE'].isin(pd.date_range("01/01/16","12/31/16"))]
+month_year_range=vehicle_collisions[vehicle_collisions['DATE'].isin(pd.date_range("01/01/16","12/31/16"))] #Storing data for the year 2016
 
 
 # In[147]:
 
 month_year_range['YEAR']=month_year_range['DATE'].dt.strftime('%Y/%b/%d').str.slice(0,4)
-month_year_range['MONTH']=month_year_range['DATE'].dt.strftime('%Y/%b/%d').str.slice(5,8)
+month_year_range['MONTH']=month_year_range['DATE'].dt.strftime('%Y/%b/%d').str.slice(5,8)  #Slicing month name from the month column
 
 
 # In[156]:
@@ -60,5 +60,5 @@ main_frame
 
 # In[166]:
 
-main_frame.to_csv(r'C:\Data Scienence\Assignmen_3\Question1\Question1_Part_1\accident_count.csv',index=False)
+main_frame.to_csv(r'Assignmen_3\Question1\Question1_Part_1\accident_count.csv',index=False)
 

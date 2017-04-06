@@ -17,7 +17,7 @@ from pandas import DataFrame as df
 
 # In[57]:
 
-employee_compensation=pd.read_csv(r'C:\Data Scienence\Assignmen_3\Data\employee_compensation.csv')  #reading csv file and storing values in a Variable
+employee_compensation=pd.read_csv(r'Assignmen_3\Data\employee_compensation.csv')  #reading csv file and storing values in a Variable
 employee_compensation.head(3)
 
 
@@ -40,5 +40,5 @@ sorted_compensation.head(9)
 
 # In[61]:
 
-sorted_compensation.to_csv(r'C:\Data Scienence\Assignmen_3\Question2\Question2_Part_1\employee_compensation_output.csv')
+sorted_compensation.to_csv(r'Assignmen_3\Question2\Question2_Part_1\employee_compensation_output.csv')
 

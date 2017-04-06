@@ -16,31 +16,31 @@
 # 
 # - Write your output to a csv file. (Sample output is given in next page)
 
-# In[96]:
+# In[1]:
 
 import pandas as pd
 from pandas import DataFrame as df
 
 
-# In[98]:
+# In[2]:
 
-movies_awards=pd.read_csv(r'C:\Data Scienence\Assignmen_3\Data\movies_awards.csv')
+movies_awards=pd.read_csv(r'Assignmen_3\Data\movies_awards.csv')
 movies_awards.head()
 
 
-# In[99]:
+# In[3]:
 
-x=pd.DataFrame(movies_awards.groupby('Awards').size())
-x.columns=['count']
-a=x.reset_index()
-
-
-# In[100]:
-
-a.head()
+movie_award=pd.DataFrame(movies_awards.groupby('Awards').size())
+movie_award.columns=['count']
+new_movie_frame=movie_award.reset_index()
 
 
-# In[101]:
+# In[4]:
+
+new_movie_frame.head()
+
+
+# In[6]:
 
 new_df = pd.DataFrame({'AWARDS':['FOO'],'AWARDS WON' : [0],'AWARDS NOMINATED' : [0],
                        'GOLDEN GLOBE WON' : [0],'GOLDEN GLOBE NOMINATED' : [0],
@@ -51,11 +51,11 @@ new_df.loc[0]
 new_df
 
 
-# In[102]:
+# In[7]:
 
-for i in a.index:
-    new_df.loc[i] = [a.ix[i]['Awards'], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-    str = a.ix[i]['Awards'].upper()
+for i in new_movie_frame.index:
+    new_df.loc[i] = [new_movie_frame.ix[i]['Awards'], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    str = new_movie_frame.ix[i]['Awards'].upper()
     index = str.find("WON")
     if index != -1:
         str = str[(index + 4):]
@@ -69,6 +69,7 @@ for i in a.index:
         new_df.set_value(i, clm_name + ' WON', splits[0])
         new_df.set_value(i, 'AWARDS WON', int(new_df.ix[i]['AWARDS WON']) + int(splits[0]))
     
+    str = new_movie_frame.ix[i]['Awards'].upper()
     index = str.find("NOMINATED FOR")
     if index != -1:
         str = str[(index + 14):]
@@ -81,14 +82,16 @@ for i in a.index:
         
         new_df.set_value(i, clm_name + ' NOMINATED', splits[0])
         new_df.set_value(i, 'AWARDS NOMINATED', int(new_df.ix[i]['AWARDS NOMINATED']) + int(splits[0]))
-        
+    
+    str = new_movie_frame.ix[i]['Awards'].upper()
     index = str.find("NOMINATION")
     if index != -1:
         str = str[:(index - 1)]
         splits = str.split()
         
         new_df.set_value(i, 'AWARDS NOMINATED', int(new_df.ix[i]['AWARDS NOMINATED']) + int(splits[len(splits) - 1]))
-        
+    
+    str = new_movie_frame.ix[i]['Awards'].upper()
     index = str.find("WIN")
     if index != -1:
         str = str[:(index - 1)]
@@ -97,12 +100,12 @@ for i in a.index:
         new_df.set_value(i, 'AWARDS WON', int(new_df.ix[i]['AWARDS WON']) + int(splits[len(splits) - 1]))    
 
 
-# In[103]:
+# In[8]:
 
 new_df.head()
 
 
-# In[104]:
+# In[9]:
 
-new_df.to_csv(r'C:\Data Scienence\Assignmen_3\Question4\movies_awards_output.csv',index=False)
+new_df.to_csv(r'Assignmen_3\Question4\movies_awards_output.csv',index=False)
 

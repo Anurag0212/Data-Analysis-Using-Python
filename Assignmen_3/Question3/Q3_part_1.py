@@ -17,7 +17,7 @@ from pandas import DataFrame as df
 
 # In[183]:
 
-match_data=pd.read_csv(r'C:\Data Scienence\Assignmen_3\Data\cricket_matches.csv')  #reading csv file and storing values in a Variable
+match_data=pd.read_csv(r'Assignmen_3\Data\cricket_matches.csv')  #reading csv file and storing values in a Variable
 match_data.head(3)
 
 
@@ -67,5 +67,5 @@ average_score.head()
 
 # In[204]:
 
-average_score.to_csv(r'C:\Data Scienence\Assignmen_3\Question3\Team_average_score.csv',index = False)
+average_score.to_csv(r'Assignmen_3\Question3\Team_average_score.csv',index = False)
 

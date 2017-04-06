@@ -7,53 +7,53 @@
 # - Display a few rows of the output use df.head(). 
 # - Generate a csv output with five columns ('borough', 'one-vehicle', 'twovehicles', 'three-vehicles', 'more-vehicles')
 
-# In[122]:
+# In[1]:
 
 import pandas as pd
 import numpy as np
 from pandas import DataFrame as df
 
 
-# In[123]:
+# In[2]:
 
 #Importing csv file and storing data into vehicle_Collision variable
-vehicle_collisions=pd.read_csv(r"C:\Data Scienence\Assignmen_3\Data\vehicle_collisions.csv") 
+vehicle_collisions=pd.read_csv(r"Assignmen_3\Data\vehicle_collisions.csv") 
 vehicle_collisions.head(5)
 
 
-# In[124]:
+# In[3]:
 
-vehicle_collisions['BOROUGH']=pd.DataFrame(vehicle_collisions['BOROUGH'].fillna(value='Unknown Borough'))
+vehicle_collisions['BOROUGH']=pd.DataFrame(vehicle_collisions['BOROUGH'].fillna(value='Unknown Borough'))  #Replacing Null by a String Value for BOROUGH column 
 
 
-# In[125]:
+# In[4]:
 
-vehicle_collisions=vehicle_collisions.fillna(value=0)
+vehicle_collisions=vehicle_collisions.fillna(value=0)   #Replacing Null by 0 in Dataframe 
 vehicle_collisions.head(5)
 
 
-# In[126]:
+# In[5]:
 
-vehicle1=vehicle_collisions['VEHICLE 1 TYPE'].apply(lambda x: 1 if x else 0)
-vehicle2=vehicle_collisions['VEHICLE 2 TYPE'].apply(lambda x: 1 if x else 0)
-vehicle3=vehicle_collisions['VEHICLE 3 TYPE'].apply(lambda x: 1 if x else 0)
-vehicle4=vehicle_collisions['VEHICLE 4 TYPE'].apply(lambda x: 1 if x else 0)
-vehicle5=vehicle_collisions['VEHICLE 5 TYPE'].apply(lambda x: 1 if x else 0)
-
-
-# In[127]:
-
-vehicle_collisions['Total']=vehicle1+vehicle2+vehicle3+vehicle4+vehicle5
+vehicle1=vehicle_collisions['VEHICLE 1 TYPE'].apply(lambda x: 1 if x else 0)   #Assign value 1 where ever vehicle 1 type is not null else 0
+vehicle2=vehicle_collisions['VEHICLE 2 TYPE'].apply(lambda x: 1 if x else 0)   #Assign value 1 where ever vehicle 1 type is not null else 0
+vehicle3=vehicle_collisions['VEHICLE 3 TYPE'].apply(lambda x: 1 if x else 0)   #Assign value 1 where ever vehicle 1 type is not null else 0
+vehicle4=vehicle_collisions['VEHICLE 4 TYPE'].apply(lambda x: 1 if x else 0)   #Assign value 1 where ever vehicle 1 type is not null else 0
+vehicle5=vehicle_collisions['VEHICLE 5 TYPE'].apply(lambda x: 1 if x else 0)   #Assign value 1 where ever vehicle 1 type is not null else 0
 
 
-# In[131]:
+# In[6]:
 
-accident_count=pd.DataFrame(vehicle_collisions.groupby(['BOROUGH','Total']).size().reset_index())
-accident_count.columns=['BOROUGH','TOTAL','COUNT']
+vehicle_collisions['Total']=vehicle1+vehicle2+vehicle3+vehicle4+vehicle5  #Adding Columns and storing the values to a new column
+
+
+# In[7]:
+
+accident_count=pd.DataFrame(vehicle_collisions.groupby(['BOROUGH','Total']).size().reset_index())  #Grouping BOROUGH and Vehicle involved in accident and counting the values
+accident_count.columns=['BOROUGH','TOTAL','COUNT']     #Assigning columns names to new Dataframe
 accident_count.head()
 
 
-# In[132]:
+# In[8]:
 
 new_df = pd.DataFrame({'BOROUGH' : ["FOO"],'ONE_VEHICLE_INVOLVED' : [0],'TWO_VEHICLES_INVOLVED' : [0],
                        'THREE_VEHICLES_INVOLVED' : [0], 'MORE_VEHICLES_INVOLVED' : [0]})
@@ -78,13 +78,13 @@ for i in accident_count.index:
         counter = counter + 1
 
 
-# In[133]:
+# In[9]:
 
 new_df=new_df[['BOROUGH','ONE_VEHICLE_INVOLVED','TWO_VEHICLES_INVOLVED','THREE_VEHICLES_INVOLVED','MORE_VEHICLES_INVOLVED']]
 new_df
 
 
-# In[134]:
+# In[11]:
 
-new_df.to_csv(r'C:\Data Scienence\Assignmen_3\Question1\Question1_part_2\vehicle_output.csv',index=False)
+new_df.to_csv(r'Assignmen_3\Question1\Question1_part_2\vehicle_output.csv',index=False)
 
