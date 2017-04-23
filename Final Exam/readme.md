@@ -130,9 +130,9 @@ Location Processed Data: <a href="Other Files">Processed Data</a>
 * Total **'6639'** cases of homicidal deaths was recorded, out of that **80.46%** were males.
 * Out of those 80% males, Marital status of **71% of males** were **'Never Married, Single'**.
 
-** Statistics:**
+**Statistics:**
 * Total Homicide Cases = 6639
 * Male =   5342      - 80.46%
 * Female=  1297      - 19.54%
 
-** Never Married, Single Male = 3776 **
+**Never Married, Single Male = 3776**
