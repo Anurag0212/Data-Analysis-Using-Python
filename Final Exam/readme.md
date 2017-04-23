@@ -36,7 +36,7 @@ Location Processed Data: <a href="Other Files">Processed Data</a>
 
 ### Conclusion from Analysis 1:
 
-* From this analysis we can say that the survival rate of Female's in any Race is always higher than the survival rate of Males in United States.
+* From this analysis we can say that the **survival rate of Female's in any Race is always higher than the survival rate of Males in United States**.
 
 
 
@@ -55,7 +55,7 @@ Location Processed Data: <a href="Other Files">Processed Data</a>
 ### Conclusion from Analysis 2:
 
 - Total **46072** accidental cases have been recorded in 2014
-- There were only 588 cases where acciental victims werer dead on arrival to any medical center,clinic or Hospital, which is only 1.27% of cases
+- There were only **588** cases where acciental victims werer dead on arrival to any medical center,clinic or Hospital, which is only **1.27%** of cases
 - From this analysis i can infere that the emegency response services in United states are faster and efficient.
 
 ** Statistics from analysis 2:**
@@ -98,9 +98,9 @@ Location Processed Data: <a href="Other Files">Processed Data</a>
 
 ### Conclusion from Analysis 4:
 
-- More than 15 thousand suicidal cases have been recorded in the year 2014
-- Out of all the cases 38.2% of high school graduate students have commited suicide
-- Less than 3% of Doctorate or professional degree holder have commited suicide in 2014
+- More than **15 thousand suicidal cases** have been recorded in the year 2014
+- Out of all the cases **38.2% of high school graduate students** have commited suicide
+- Less than **3%** of Doctorate or professional degree holder have commited suicide in 2014
 
 **Statistics:**
 
@@ -128,7 +128,7 @@ Location Processed Data: <a href="Other Files">Processed Data</a>
 
 * From the dataset of Death records, I can infer that Males are targeted in the homicidal cases in United States.
 * Total **'6639'** cases of homicidal deaths was recorded, out of that **80.46%** were males.
-* Out of those 80% males, Marital status of 71% of males were 'Never Married, Single'.
+* Out of those 80% males, Marital status of **71% of males** were **'Never Married, Single'**.
 
 ** Statistics:**
 * Total Homicide Cases = 6639
