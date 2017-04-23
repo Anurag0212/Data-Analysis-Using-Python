@@ -58,10 +58,81 @@ Location Processed Data: <a href="Other Files">Processed Data</a>
 - There were only 588 cases where acciental victims werer dead on arrival to any medical center,clinic or Hospital, which is only 1.27% of cases
 - From this analysis i can infere that the emegency response services in United states are faster and efficient.
 
-** Statistics:**
+** Statistics from analysis 2:**
 
     Total Accident Cases - 46072
     Dead on Arrival cases - 588
 
 
 
+## Analysis 3 : Finding the Death trends for each months
+
+* Imported data from the processed data file
+* Merged processed csv file with another file to get the **Month Name** instead of month number.
+* Assigned proper column name to my new dataframe
+* Extracted data for records present in manner of death column to find the trend
+* Plotted a line graph to find the trend between Suicidal, Accidental and Homicidal deaths.
+
+<img width="760" alt="trend analysis" src="https://cloud.githubusercontent.com/assets/25333972/25310423/c7ced4e6-27b1-11e7-9bfd-7263300343cd.PNG">
+
+
+### Conclusion from Analysis 3:
+
+- Accidental deaths are higher than the suicidal and homicidal deaths in United States
+- Accidental deaths were higher in the month of **January** and **July** as per our analysis
+- Suicidal deaths were higher in the month of **September**
+
+
+
+
+## Analysis 4 : Suicidal Cases based on persons educational level
+
+* Imported data from the processed data file
+* Restricted my dataframe to show only those record where Manner of death was Suicide.
+* Grouped my dataframe based on the Educational level column.
+* Stored the data in a csv file as a result of this analysis
+* Created a pie chart to display the percetage of suicidal deaths based on the educational level.
+
+<img width="674" alt="suicidal cases based on education level" src="https://cloud.githubusercontent.com/assets/25333972/25310456/8d725128-27b2-11e7-9601-d7fe775d291e.PNG">
+
+
+### Conclusion from Analysis 4:
+
+- More than 15 thousand suicidal cases have been recorded in the year 2014
+- Out of all the cases 38.2% of high school graduate students have commited suicide
+- Less than 3% of Doctorate or professional degree holder have commited suicide in 2014
+
+**Statistics:**
+
+    Category Type    -      Category                   -     Percentage of Suicidal Deaths
+
+    Highest          -      High School Graduate       -     38.2%
+
+    Lowest           -      Doctorate or Professional  -     2.04%
+    
+    
+ ## Analysis 5 : Homicidal cases based on Marital Status and gender
+
+* Imported data from the processed data file
+* Restricted my dataframe to show only those record where Manner of death was Homicide.
+* Grouped my dataframe based on the Marital status and gender coulmns.
+* Stored the data in a csv file as a result of this analysis
+* Created a grouped bar chart to display the homicidal deaths bassed on their **marital status** and **gender**.
+
+
+<img width="404" alt="homicidal deaths" src="https://cloud.githubusercontent.com/assets/25333972/25310487/5c20e9ee-27b3-11e7-9997-57ab487c17c3.PNG">
+
+
+
+### Conclusion from Analysis 5:
+
+* From the dataset of Death records, I can infer that Males are targeted in the homicidal cases in United States.
+* Total **'6639'** cases of homicidal deaths was recorded, out of that **80.46%** were males.
+* Out of those 80% males, Marital status of 71% of males were 'Never Married, Single'.
+
+** Statistics:**
+* Total Homicide Cases = 6639
+* Male =   5342      - 80.46%
+* Female=  1297      - 19.54%
+
+** Never Married, Single Male = 3776 **
