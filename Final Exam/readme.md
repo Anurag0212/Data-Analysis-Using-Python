@@ -26,10 +26,10 @@ Location Processed Data: <a href="https://github.com/Anurag0212/singh_Anurag_Spr
 ## Analysis Performed
 
 
-## Analysis 1 : Racial Bases survival rate in United States for Males and females
+## Analysis 1 : Racial Based survival rate in United States for Males and females
 
 * Restricted the dataframe for Natural death cases
-* Grouped the result on Race, Rasident status and Gender to get the count
+* Grouped the result on Race, Resident status and Gender to get the count
 * Plotted a grouped bar chart to display the result
 
 <img width="751" alt="racial based survival" src="https://cloud.githubusercontent.com/assets/25333972/25310311/b078b73c-27af-11e7-92a3-f65e15a0d52f.PNG">
