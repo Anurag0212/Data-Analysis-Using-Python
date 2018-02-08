@@ -15,7 +15,7 @@ There is a main Death record file which is like a fact table. It stores only key
 
 * There is a separate Data folder which stores the Raw data.
 
-Location Raw Data: <a href="Other Files">Data</a>
+Location Raw Data: <a href="https://github.com/Anurag0212/singh_Anurag_Spring17/tree/master/Final%20Exam/Data">Data</a>
 
 * There are total 15 csv files which need to be merged together to create a processed csv file which is being used for the analysis.
 
