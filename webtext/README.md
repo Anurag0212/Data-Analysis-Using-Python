@@ -1,4 +1,4 @@
-Web Text Corpus
+### Web Text Corpus
 
 This is a collection of diverse, contemporary text genres,
 collected by scraping publicly accessible archives of web postings.
