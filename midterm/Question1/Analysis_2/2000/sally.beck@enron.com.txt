@@ -1,3 +1,0 @@
-('Lead:', 'sally.beck@enron.com')
-('Audience:', 'suew2@aol.com')
-('Keyword', 'gift')

@@ -1,3 +1,0 @@
-('Lead:', 'richard.sanders@enron.com')
-('Audience:', 'steve.c.hall@enron.com, christian.yoder@enron.com')
-('Keyword', 'reward')

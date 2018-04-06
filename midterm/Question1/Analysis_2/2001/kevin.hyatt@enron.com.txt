@@ -1,3 +1,0 @@
-('Lead:', 'kevin.hyatt@enron.com')
-('Audience:', 'lillian.villarreal@enron.com, geneva.davis@enron.com, pamela.rush@enron.com')
-('Keyword', 'gift')
