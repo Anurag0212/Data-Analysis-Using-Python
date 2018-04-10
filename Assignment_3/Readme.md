@@ -21,12 +21,13 @@ Analysis 6 is based on Dataset 4.
 I have performed analysis on New York Accident Data set and calculated the percentage of accidents occurred for each month of 2016 in MANHATTAN to the overall accidents occurred in New York city.
 Resule:
 
+<img src='https://github.com/Anurag0212/Data-Analysis-Using-Python/blob/master/Assignment_3/Analysis_1.PNG'>
 
 #### Analysis 2: Accident scale based on number of cars involved
 I calculated the distribution of each accidents scale based on the number of cars involved in an accident for example, 1 car was involved, 2 cars were involved etc.
 I have assigned values 1 to the columns ‘Vehicle 1 type’, ‘Vehicle 2 Type’….’Vehicle 5 Type’ where ever the values are not null and for the null values I have assigned values 0 using lambda function. Added those five columns and collected the data into a new column which gives the results as 0,1,2,3,4 or 5. Which signifies the number of cars involved in an accident.
 
-
+<img src='https://github.com/Anurag0212/Data-Analysis-Using-Python/blob/master/Assignment_3/Analysis_2.PNG'>
 
 Output:
  
@@ -35,7 +36,7 @@ Output:
 Performed analysis based on employee compensation data and calculated the highest paid department in each organization. Used groupby() function to group the organization and Department and then calculated the mean of Total compensation columns also sorted the values of mean_total_compensation columns in descending order.
 Output:
  
-
+<img src='https://github.com/Anurag0212/Data-Analysis-Using-Python/blob/master/Assignment_3/Analysis_3.PNG'>
 
 
 #### Question 2 Part 2:
@@ -44,7 +45,7 @@ Filtered the data frame for the employees whose overtime salary is more than 5% 
 Output:
  
 
-
+<img src='https://github.com/Anurag0212/Data-Analysis-Using-Python/blob/master/Assignment_3/Analysis_4.PNG'>
 
 
 
@@ -56,8 +57,10 @@ Applied filter on the data frame to give only those rows where column ‘home’
 If winner matched with the columns innings1 then added the scores from innings1_runs else added the scores from innings2_runs and then stored the added score in a new columns and calculated the average.
 Output:
  
+<img src='https://github.com/Anurag0212/Data-Analysis-Using-Python/blob/master/Assignment_3/Analysis_5.PNG'>
 
 #### Question 4:
 Based on the movie awards dataset performed analysis, extracted the data from the award columns and split it into several columns and then calculated the total awards and total nominations count.
 Output:
- 
+
+<img src='https://github.com/Anurag0212/Data-Analysis-Using-Python/blob/master/Assignment_3/Analysis_6.PNG'>
