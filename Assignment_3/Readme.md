@@ -2,7 +2,7 @@
 I have performed 6 analysis on New York Accidental data set and came up with some insight from the available records. 
 ## Data Formats:
 There are 4 different datasets that have been used
-Dataset1: [Vehicle Collision]( https://www.kaggle.com/nypd/vehicle-collisions/data)
+Dataset1: [Vehicle Collision]( https://www.kaggle.com/nypd/vehicle-collisions/data)  
 The motor vehicle collision database includes the date and time, location (as borough, street names, zip code and latitude and longitude coordinates), injuries and fatalities, vehicle number and types, and related factors for all 65,500 collisions in New York City during 2015 and 2016.
 
 Dataset2: [Employee Record]()
@@ -16,6 +16,7 @@ Analysis 1 and Analysis 2 is based on Dataset 1.
 Analysis 3 and Analysis 4 is based on Dataset 2.
 Analysis 5 is based on Dataset 3.
 Analysis 6 is based on Dataset 4.
+
 ### Analysis 1: Accident Ratio between MANHATTAN boroughs to New York City
 I have performed analysis on New York Accident Data set and calculated the percentage of accidents occurred for each month of 2016 in MANHATTAN to the overall accidents occurred in New York city.
 Resule:
